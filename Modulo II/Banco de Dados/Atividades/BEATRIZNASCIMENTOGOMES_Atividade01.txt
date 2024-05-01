@@ -1,0 +1,66 @@
+# Respostas
+
+# Questão 01
+select c.nome_cantor, c.cod_cantor, count(g.cod_gravacao) as QuantidadeDeGravacoes
+from cantor c
+join gravacao g on c.cod_cantor = g.cod_cantor 
+group by c.cod_cantor 
+having QuantidadeDeGravacoes = (select MIN(contagem_gravacao) as min_gravacao from (
+		        select count(cod_gravacao) as contagem_gravacao
+		        from gravacao g1
+		        join cantor c1 on g1.cod_cantor = c1.cod_cantor
+		        group by c1.cod_cantor) as subquery
+);					
+
+
+# Questão 02
+select c.nome_cantor, count(distinct g2.cod_gravadora) as quantidade_gravadoras
+from cantor c
+join gravacao g ON c.cod_cantor = g.cod_cantor
+JOIN gravadora g2 ON g.cod_gravadora = g2.cod_gravadora
+group by c.cod_cantor, c.nome_cantor
+order by quantidade_gravadoras desc
+limit 2;
+
+
+# Questão 03
+select c.nome_cantor, coalesce(AVG(m.duracao),'.0000') as duracao
+from cantor c
+join gravacao g on c.cod_cantor = g.cod_cantor
+join musica m on g.cod_musica = m.cod_musica 
+group by c.cod_cantor, c.nome_cantor
+order by duracao desc
+limit 1;
+
+
+# Questão 04
+select c.nome_cantor 
+from cantor c 
+left join gravacao g on c.cod_cantor = g.cod_cantor 
+left join gravadora g2 on g.cod_gravadora = g2.cod_gravadora 
+where g.cod_gravadora not in (select g2.cod_gravadora from gravadora where g2.nome_gravadora = 'Sony')
+group by c.nome_cantor;
+
+
+# Questão 05
+select c.nome_cantor as cantor, m.titulo  as musica, g.data_gravacao as data_gravacao
+from cantor c
+join gravacao g on c.cod_cantor = g.cod_cantor 
+join musica m on g.cod_musica = m.cod_musica
+where year(data_gravacao) = 2004;
+
+
+# Questão 06
+select c.nome_cantor as nome_cantor, coalesce(max(g.data_gravacao), '') as data_ultima_gravacao
+from cantor c
+left join gravacao g on c.cod_cantor = g.cod_cantor
+group by (c.nome_cantor)
+order by data_ultima_gravacao desc;
+
+
+# Questão 07
+select p.nome_pessoa, max(case when f.tipo = 'R' then f.numero end) as fone_residencial,
+    max(case when f.tipo = 'C' then f.numero end) as fone_comercial, max(case when f.tipo = 'L' then f.numero end) as fone_celular
+from pessoa p 
+inner join fone f ON p.cod_pessoa = f.cod_pessoa
+group by p.nome_pessoa;

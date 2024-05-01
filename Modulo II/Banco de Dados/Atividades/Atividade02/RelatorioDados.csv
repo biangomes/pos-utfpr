@@ -1,0 +1,5 @@
+"codDepartamento","nome_departamento","codFuncionario","nome_funcionario","qtdDependentes","salario","cargo"
+1,Desenvolvimento,1,Beatriz,0,6000.0,Desenvolvedora Jr
+1,Desenvolvimento,4,Fabio,3,6000.0,Desenvolvedor Jr
+2,Marketing,2,Andrea,1,5000.0,Analista de Marketing Pleno
+3,Infraestrutura,3,Bruno,0,5000.0,Analista de Infraestrutura Pleno
