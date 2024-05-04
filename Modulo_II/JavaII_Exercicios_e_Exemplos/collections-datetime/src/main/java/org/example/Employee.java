@@ -4,19 +4,19 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public record Employee(String nome, LocalDate dataNascimento, BigDecimal salario, String departamento) {
-  public String nome() {
+  public String getNome() {
     return nome;
   }
 
-  public LocalDate dataNascimento() {
+  public LocalDate getDataNascimento() {
     return dataNascimento;
   }
 
-  public BigDecimal salario() {
+  public BigDecimal getSalario() {
     return salario;
   }
 
-  public String departamento() {
+  public String getDepartamento() {
     return departamento;
   }
 }

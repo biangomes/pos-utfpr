@@ -27,6 +27,20 @@ public class Application {
 //      }
 //    }
 
+    // contar os funcionarios que trabalham no Faturamento
+//    final var total = employees.stream()
+//        .filter(ep -> ep.departamento().equals("Faturamento"))
+//        .count();
+//    System.out.printf("Pessoas no faturamento %s", total).println();
+
+    // Somatoria do salario de todo mundo que trabalha no RH
+    final var totalRh = employees.stream()  // pegando todos os salarios
+        .filter(ep -> ep.departamento().equals("RH"))
+        .map(Employee::getSalario)    // mapeando os salarios deles
+        .reduce(BigDecimal.ZERO, BigDecimal::add);    // caso a soma (seg. parametro) der "problema", será retornado zero
+
+    System.out.printf("Salario total RH: R$%s", totalRh).println();
+
     // =================================================================
 
     // FUNCIONAL
