@@ -1,0 +1,8 @@
+
+”
+java:S1192%"LDefine a constant instead of duplicating this literal "Faturamento" 3 times.(›ìèÏüÿÿÿÿ8Í Æ¥ô1J$13735477-1215-461a-9218-e817057d490f
+~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8ª¡Æ¥ô1J$4060c84d-e570-408a-aeca-8f55d07cec4c
+~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8«¡Æ¥ô1J$f31e3eb6-189f-40fc-b15d-b9b9a00a4bf6
+m	java:S106&"+Replace this use of System.out by a logger.(×«ëó8¥ÜÈ¥ô1J$21a57214-2213-4f27-a42f-02c406deaa64
+r
+java:S11977"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8·ÜÈ¥ô1J$fc2a59bd-437d-44d0-9292-ff907e24981e
