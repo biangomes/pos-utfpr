@@ -34,12 +34,22 @@ public class Application {
 //    System.out.printf("Pessoas no faturamento %s", total).println();
 
     // Somatoria do salario de todo mundo que trabalha no RH
-    final var totalRh = employees.stream()  // pegando todos os salarios
-        .filter(ep -> ep.departamento().equals("RH"))
-        .map(Employee::getSalario)    // mapeando os salarios deles
-        .reduce(BigDecimal.ZERO, BigDecimal::add);    // caso a soma (seg. parametro) der "problema", será retornado zero
+//    final var totalRh = employees.stream()  // pegando todos os salarios
+//        .filter(ep -> ep.departamento().equals("RH"))
+//        .map(Employee::getSalario)    // mapeando os salarios deles
+//        .reduce(BigDecimal.ZERO, BigDecimal::add);    // caso a soma (seg. parametro) der "problema", será retornado zero
+//
+//    System.out.printf("Salario total RH: R$%s", totalRh).println();
 
-    System.out.printf("Salario total RH: R$%s", totalRh).println();
+    // Existe algum funcionario que trabalha na Contabilidade?
+    final var hasAnyEmployeeFromContabilidade = employees.stream().anyMatch(ep -> ep.getDepartamento().equals("Contabilidade"));
+    System.out.printf("Existe alguém que trabalha na Contabilidade: %b", hasAnyEmployeeFromContabilidade).println();
+
+
+    // TODOS os funcionarios trabalham na Contabilidade?
+    final var areAllEmployeesFromContabilidade = employees.stream().allMatch(ep -> ep.getDepartamento().equals("Contabilidade"));
+    System.out.printf("Todos trabalham na Contabilidade: %b", areAllEmployeesFromContabilidade).println();
+
 
     // =================================================================
 
@@ -47,9 +57,9 @@ public class Application {
 //    employees.forEach(System.out::println); // method reference
 
     // todos os funcionarios do dpto de Faturamento
-    employees.stream()    // cria uma stream
-             .filter(ep -> ep.departamento().equals("Faturamento")) // atraves da arrow function, busca os employees de Faturamento
-             .forEach(System.out::println);   // permite imprimir os resultados filtrados acima
+//    employees.stream()    // cria uma stream
+//             .filter(ep -> ep.departamento().equals("Faturamento")) // atraves da arrow function, busca os employees de Faturamento
+//             .forEach(System.out::println);   // permite imprimir os resultados filtrados acima
 
   }
 

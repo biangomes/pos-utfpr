@@ -1,12 +1,13 @@
 
-”
-java:S11923"LDefine a constant instead of duplicating this literal "Faturamento" 3 times.(›ìèÏüÿÿÿÿ8Ä”ò¥ô1J$43b64626-c25f-4fa0-b916-c74e8cd25d94
-~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8•ò¥ô1J$60c4d6a0-c4e0-495c-9744-fde7e1f747a4
-~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8•ò¥ô1J$350b7709-34b4-492a-a3d7-7b6670f282f8
-~	java:S125!"<This block of commented-out lines of code should be removed.(›å¨Â8üù¥ô1J$fa5bdb84-fbeb-4c6b-9275-7733f93fa0b3
+‘
+java:S1192-"NDefine a constant instead of duplicating this literal "Contabilidade" 4 times.(…ìúú8”¢‹¦ô1J$d37a516e-650f-4e43-a2b7-159f290659f9
+~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8Á¢‹¦ô1J$af820920-74aa-4e06-bf71-d5670f2a29ca
+~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8Æ¢‹¦ô1J$7fe5440a-8d5c-4c11-84d2-0da0389ca1c6
+~	java:S125!"<This block of commented-out lines of code should be removed.(›å¨Â8Æ¢‹¦ô1J$35012835-959e-4f55-bee5-7a7da2236c16
+~	java:S125*"<This block of commented-out lines of code should be removed.(úÿÊä8Ç¢‹¦ô1J$7ecf0754-884b-46dc-a8fe-bebcb1b1664a
 u
-java:S1135$"2Complete the task associated to this TODO comment.(¶ïà½8•ò¥ô1J$aeb0116a-4d79-46c1-b840-74f0a2a7e86f
-m	java:S106*"+Replace this use of System.out by a logger.(º†–Ä8¯•ò¥ô1J$d01d5ecb-97db-4c52-943b-6db834b13e9d
-m	java:S1064"+Replace this use of System.out by a logger.(×«ëó8õÄõ¥ô1J$bfd59f82-5cbe-4c31-a44b-aec413c1b38d
+java:S1135$"2Complete the task associated to this TODO comment.(¶ïà½8É¢‹¦ô1J$e21a3b12-4d7b-45b8-a37b-15c0b1115c02
+m	java:S106."+Replace this use of System.out by a logger.(¨É€Û8Î¢‹¦ô1J$10645264-4604-4be0-895f-88c3c5bf6b3d
+r	java:S1063"+Replace this use of System.out by a logger.(¾ÀÆÆıÿÿÿÿ8ë¦ô1J$b207e732-b127-4a5e-8fa8-0f42e59499ea
 r
-java:S1197E"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8Ğ•ò¥ô1J$4bc47b3f-5278-4dde-80ae-a59e41039394
+java:S1197O"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8á¢‹¦ô1J$2403355c-df66-4bc3-95e8-4da3646ebb5b
