@@ -1,15 +1,23 @@
 
-–
-java:S11929"NDefine a constant instead of duplicating this literal "Contabilidade" 3 times.(Í¹ˆÿÿÿÿÿ8äè•Åô1J$be4cc5f2-66b1-458e-88f5-c86835d34fa0
-~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8£é•Åô1J$53d14f75-5b40-44c1-82b4-942600843f54
-~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8¤é•Åô1J$4f5d3d96-e91e-457b-be90-25a8054495ce
-~	java:S125""<This block of commented-out lines of code should be removed.(›å¨Â8¤é•Åô1J$1820363e-d5d8-4f8a-a5c2-b4036aabc059
-~	java:S125+"<This block of commented-out lines of code should be removed.(úÿÊä8¤é•Åô1J$4866b6ca-25cc-4293-ad79-8b0870938888
-X	java:S125."<This block of commented-out lines of code should be removed.(ö”¯ş8ÊÂ–Åô1
-u
-java:S1135%"2Complete the task associated to this TODO comment.(¶ïà½8¦é•Åô1J$0f0d639f-00cb-4d61-95df-6294fab436df
-•
-java:S6204:"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8²é•Åô1J$5802d637-e6a8-4b51-9cef-9492210cbaba
-l	java:S106;"+Replace this use of System.out by a logger.(àö¥m8¶é•Åô1J$19fbb3eb-fe45-4e24-8471-61eb7d6bd9f4
-r
-java:S1197V"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8Çé•Åô1J$03e2ba9b-b5de-4df5-add8-8d6465b5ef88
+b
+java:S1192h"FDefine a constant instead of duplicating this literal "Shion" 5 times.(ÒØ£]8ù¥İÅô1
+k
+java:S1192d"NDefine a constant instead of duplicating this literal "Contabilidade" 6 times.(ÈìÚÃ8ú¥İÅô1
+X	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8Å¦İÅô1
+X	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8Å¦İÅô1
+X	java:S125#"<This block of commented-out lines of code should be removed.(›å¨Â8Æ¦İÅô1
+X	java:S125,"<This block of commented-out lines of code should be removed.(úÿÊä8Æ¦İÅô1
+X	java:S125/"<This block of commented-out lines of code should be removed.(ö”¯ş8Ç¦İÅô1
+X	java:S125;"<This block of commented-out lines of code should be removed.(‘Üã«8Ç¦İÅô1
+X	java:S125B"<This block of commented-out lines of code should be removed.(›å¨Â8È¦İÅô1
+]	java:S125H"<This block of commented-out lines of code should be removed.(´Îèîùÿÿÿÿ8È¦İÅô1
+X	java:S125K"<This block of commented-out lines of code should be removed.(†ıÌª8È¦İÅô1
+O
+java:S1135&"2Complete the task associated to this TODO comment.(¶ïà½8Ë¦İÅô1
+o
+java:S6204Q"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Î¦İÅô1
+G	java:S106R"+Replace this use of System.out by a logger.(‚å™Ç8Õ¦İÅô1
+L
+java:S1197q"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8ø¦İÅô1
+N
+java:S1128"1Remove this unused import 'java.util.Comparator'.(î¹ó¹8ú¦İÅô1

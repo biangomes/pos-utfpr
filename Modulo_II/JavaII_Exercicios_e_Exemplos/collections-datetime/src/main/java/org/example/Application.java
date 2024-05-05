@@ -3,6 +3,7 @@ package org.example;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -53,10 +54,32 @@ public class Application {
 
 
     // Criar uma lista a partir de um filtro
-    final var employeesFromContabilidade = employees.stream()
-        .filter(ep -> ep.getDepartamento().equals("Contabilidade"))
+//    final var employeesFromContabilidade = employees.stream()
+//        .filter(ep -> ep.getDepartamento().equals("Contabilidade"))
+//        .collect(Collectors.toList());
+//    System.out.println(employeesFromContabilidade);
+
+    // Considerando dados REPETIDOS, pegar APENAS um
+//    final var justOneShion = employees.stream()
+//        .filter(ep -> ep.getNome().equals("Shion"))
+//        .distinct()
+//        .count();
+//    System.out.println(justOneShion);
+
+    // Ordenação de objetos
+//    employees.stream()
+//             .sorted(Comparator.comparing(Employee::getSalario).reversed())
+//        .forEach(System.out::println);
+
+    // Ordenação de objetos ALTERANDO a lista em si
+//    employees.sort(Comparator.comparing(Employee::getSalario).reversed());
+
+    // Usando LIMIT
+    final var justTwoFromRh = employees.stream()
+        .filter(ep -> ep.getDepartamento().equals("RH"))
+        .limit(2)
         .collect(Collectors.toList());
-    System.out.println(employeesFromContabilidade);
+    justTwoFromRh.forEach(System.out::println);
 
     // =================================================================
 
@@ -78,6 +101,10 @@ public class Application {
     employees.add(new Employee("Naruto", LocalDate.of(1987, 5, 12), new BigDecimal(7000), "RH"));
     employees.add(new Employee("Saori", LocalDate.of(1986, 10, 10), new BigDecimal(1500), "RH"));
     employees.add(new Employee("Miro", LocalDate.of(1985, 12, 1), new BigDecimal(2000), "Faturamento"));
+    employees.add(new Employee("Shion", LocalDate.of(1984, 12, 14), new BigDecimal(2500), "Contabilidade"));
+    employees.add(new Employee("Shion", LocalDate.of(1984, 12, 14), new BigDecimal(2500), "Contabilidade"));
+    employees.add(new Employee("Shion", LocalDate.of(1984, 12, 14), new BigDecimal(2500), "Contabilidade"));
+    employees.add(new Employee("Shion", LocalDate.of(1984, 12, 14), new BigDecimal(2500), "Contabilidade"));
     employees.add(new Employee("Shion", LocalDate.of(1984, 12, 14), new BigDecimal(2500), "Contabilidade"));
 
     return employees;
