@@ -1,13 +1,15 @@
 
-‘
-java:S1192-"NDefine a constant instead of duplicating this literal "Contabilidade" 4 times.(…ìúú8”¢‹¦ô1J$d37a516e-650f-4e43-a2b7-159f290659f9
-~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8Á¢‹¦ô1J$af820920-74aa-4e06-bf71-d5670f2a29ca
-~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8Æ¢‹¦ô1J$7fe5440a-8d5c-4c11-84d2-0da0389ca1c6
-~	java:S125!"<This block of commented-out lines of code should be removed.(›å¨Â8Æ¢‹¦ô1J$35012835-959e-4f55-bee5-7a7da2236c16
-~	java:S125*"<This block of commented-out lines of code should be removed.(úÿÊä8Ç¢‹¦ô1J$7ecf0754-884b-46dc-a8fe-bebcb1b1664a
+–
+java:S11929"NDefine a constant instead of duplicating this literal "Contabilidade" 3 times.(Í¹ˆÿÿÿÿÿ8äè•Åô1J$be4cc5f2-66b1-458e-88f5-c86835d34fa0
+~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8£é•Åô1J$53d14f75-5b40-44c1-82b4-942600843f54
+~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8¤é•Åô1J$4f5d3d96-e91e-457b-be90-25a8054495ce
+~	java:S125""<This block of commented-out lines of code should be removed.(›å¨Â8¤é•Åô1J$1820363e-d5d8-4f8a-a5c2-b4036aabc059
+~	java:S125+"<This block of commented-out lines of code should be removed.(úÿÊä8¤é•Åô1J$4866b6ca-25cc-4293-ad79-8b0870938888
+X	java:S125."<This block of commented-out lines of code should be removed.(ö”¯ş8ÊÂ–Åô1
 u
-java:S1135$"2Complete the task associated to this TODO comment.(¶ïà½8É¢‹¦ô1J$e21a3b12-4d7b-45b8-a37b-15c0b1115c02
-m	java:S106."+Replace this use of System.out by a logger.(¨É€Û8Î¢‹¦ô1J$10645264-4604-4be0-895f-88c3c5bf6b3d
-r	java:S1063"+Replace this use of System.out by a logger.(¾ÀÆÆıÿÿÿÿ8ë¦ô1J$b207e732-b127-4a5e-8fa8-0f42e59499ea
+java:S1135%"2Complete the task associated to this TODO comment.(¶ïà½8¦é•Åô1J$0f0d639f-00cb-4d61-95df-6294fab436df
+•
+java:S6204:"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8²é•Åô1J$5802d637-e6a8-4b51-9cef-9492210cbaba
+l	java:S106;"+Replace this use of System.out by a logger.(àö¥m8¶é•Åô1J$19fbb3eb-fe45-4e24-8471-61eb7d6bd9f4
 r
-java:S1197O"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8á¢‹¦ô1J$2403355c-df66-4bc3-95e8-4da3646ebb5b
+java:S1197V"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8Çé•Åô1J$03e2ba9b-b5de-4df5-add8-8d6465b5ef88

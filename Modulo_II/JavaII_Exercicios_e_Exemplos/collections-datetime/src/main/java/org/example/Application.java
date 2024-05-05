@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Application {
   public Application() {
@@ -42,14 +43,20 @@ public class Application {
 //    System.out.printf("Salario total RH: R$%s", totalRh).println();
 
     // Existe algum funcionario que trabalha na Contabilidade?
-    final var hasAnyEmployeeFromContabilidade = employees.stream().anyMatch(ep -> ep.getDepartamento().equals("Contabilidade"));
-    System.out.printf("Existe alguém que trabalha na Contabilidade: %b", hasAnyEmployeeFromContabilidade).println();
+//    final var hasAnyEmployeeFromContabilidade = employees.stream().anyMatch(ep -> ep.getDepartamento().equals("Contabilidade"));
+//    System.out.printf("Existe alguém que trabalha na Contabilidade: %b", hasAnyEmployeeFromContabilidade).println();
+//
+//
+//    // TODOS os funcionarios trabalham na Contabilidade?
+//    final var areAllEmployeesFromContabilidade = employees.stream().allMatch(ep -> ep.getDepartamento().equals("Contabilidade"));
+//    System.out.printf("Todos trabalham na Contabilidade: %b", areAllEmployeesFromContabilidade).println();
 
 
-    // TODOS os funcionarios trabalham na Contabilidade?
-    final var areAllEmployeesFromContabilidade = employees.stream().allMatch(ep -> ep.getDepartamento().equals("Contabilidade"));
-    System.out.printf("Todos trabalham na Contabilidade: %b", areAllEmployeesFromContabilidade).println();
-
+    // Criar uma lista a partir de um filtro
+    final var employeesFromContabilidade = employees.stream()
+        .filter(ep -> ep.getDepartamento().equals("Contabilidade"))
+        .collect(Collectors.toList());
+    System.out.println(employeesFromContabilidade);
 
     // =================================================================
 
