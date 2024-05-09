@@ -75,12 +75,20 @@ public class Application {
 //    employees.sort(Comparator.comparing(Employee::getSalario).reversed());
 
     // Usando LIMIT
-    final var justTwoFromRh = employees.stream()
-        .filter(ep -> ep.getDepartamento().equals("RH"))
-        .limit(2)
-        .collect(Collectors.toList());
-    justTwoFromRh.forEach(System.out::println);
+//    final var justTwoFromRh = employees.stream()
+//        .filter(ep -> ep.getDepartamento().equals("RH"))
+//        .limit(2)
+//        .collect(Collectors.toList());
+//    justTwoFromRh.forEach(System.out::println);
 
+    final var totalPaycheckFromRh = employees.stream()
+             .filter(ep -> ep.getDepartamento().equals("RH"))
+             .peek(System.out::println)
+             .map(Employee::getSalario)
+             .reduce(BigDecimal.ZERO, BigDecimal::add);
+    System.out.println(totalPaycheckFromRh);
+    System.out.println("------------------------------------------------");
+    employees.stream().findFirst().ifPresent(System.out::println);
     // =================================================================
 
     // FUNCIONAL
