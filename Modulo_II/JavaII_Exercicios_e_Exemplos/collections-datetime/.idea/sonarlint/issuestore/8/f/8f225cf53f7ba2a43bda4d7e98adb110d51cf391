@@ -1,0 +1,18 @@
+
+f
+java:S1192	"IDefine a constant instead of duplicating this literal "New York" 3 times.(Š‚†Ê8ÿå§–ö1
+`
+java:S1854">Remove this useless assignment to local variable "population".(µ¸ğúÿÿÿÿ8­æ§–ö1
+[
+java:S1854">Remove this useless assignment to local variable "orderedMap".(õî´¶8¯æ§–ö1
+Q
+java:S1481"/Remove this unused "population" local variable.(µ¸ğúÿÿÿÿ8Áæ§–ö1
+G	java:S106"+Replace this use of System.out by a logger.(¼ïŠ8Çæ§–ö1
+L
+java:S2201"*The return value of "keySet" must be used.(ö™ú¹ùÿÿÿÿ8Ëæ§–ö1
+G
+java:S2201"*The return value of "values" must be used.(Öù¿´8Íæ§–ö1
+N
+java:S2201",The return value of "entrySet" must be used.(·‚†ûÿÿÿÿ8Ğæ§–ö1
+L
+java:S1481"/Remove this unused "orderedMap" local variable.(õî´¶8×æ§–ö1

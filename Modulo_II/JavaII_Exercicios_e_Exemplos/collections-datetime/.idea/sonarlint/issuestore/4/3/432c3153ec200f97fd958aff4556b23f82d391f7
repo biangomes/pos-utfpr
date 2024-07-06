@@ -1,29 +1,25 @@
 
-ˆ
-java:S1192p"FDefine a constant instead of duplicating this literal "Shion" 5 times.(ÒØ£]8°áöÅô1J$bec71044-d1ca-4aa2-9657-604adde9d91c
-‘
-java:S1192l"NDefine a constant instead of duplicating this literal "Contabilidade" 6 times.(ÈìÚÃ8²áöÅô1J$5365ae31-234f-4b93-adca-73c8489e7b6b
-~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8–…âÅô1J$ce487a1b-d2df-470e-86af-82ce15e81d59
-~	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8—…âÅô1J$27fc7023-032e-45a1-a310-0d1e351ba32b
-~	java:S125#"<This block of commented-out lines of code should be removed.(›å¨Â8—…âÅô1J$f08dfe87-deef-4a9c-961d-78d9f8a1309b
-~	java:S125,"<This block of commented-out lines of code should be removed.(úÿÊä8—…âÅô1J$d204725a-3c31-4bc7-9cb8-a00b50744ec5
-~	java:S125/"<This block of commented-out lines of code should be removed.(ö”¯ş8˜…âÅô1J$8e60f0ef-e5ea-43c9-b39f-4d585bb7d666
-~	java:S125;"<This block of commented-out lines of code should be removed.(‘Üã«8˜…âÅô1J$092683dc-65d0-4b80-81d0-f865ada5b55b
-~	java:S125B"<This block of commented-out lines of code should be removed.(›å¨Â8™…âÅô1J$b9a8ee74-a735-4484-90e4-2cf157a28ce9
-ƒ	java:S125H"<This block of commented-out lines of code should be removed.(´Îèîùÿÿÿÿ8™…âÅô1J$262dd5ca-55dd-418d-be85-4047fc07d316
-~	java:S125K"<This block of commented-out lines of code should be removed.(†ıÌª8™…âÅô1J$1752155b-ab20-49cf-916d-06aea2383419
-~	java:S125Q"<This block of commented-out lines of code should be removed.(‘Üã«8š…âÅô1J$8e7d7187-2900-48bb-ad00-6cd950425a81
-u
-java:S1135&"2Complete the task associated to this TODO comment.(¶ïà½8œ…âÅô1J$5b238461-9b42-4e68-8266-e40ca9b7d927
-d
-java:S3864V"!Remove this use of "Stream.peek".(ßˆ±ö8’…âÅô1J$4d1ce669-38f2-4a75-b992-53e240d0ab25
-m	java:S106V"+Replace this use of System.out by a logger.(ßˆ±ö8 …âÅô1J$6c9da67c-89b5-4fb3-8789-7fa06b645d96
-m	java:S106Y"+Replace this use of System.out by a logger.(ªŞÜû8†„æÅô1J$04cedcc8-eec3-41c8-9001-fe45fd4151d6
-m	java:S106Z"+Replace this use of System.out by a logger.(ù€•8ü­öÅô1J$a79463b5-6042-4779-b055-d940e2662b93
-r	java:S106["+Replace this use of System.out by a logger.(à­²˜øÿÿÿÿ8šâöÅô1J$a307118e-6263-47c9-aaba-45f9775529da
-r
-java:S1197y"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8ÀâöÅô1J$347ec32a-5217-46a1-91c3-4e7ad258d368
-t
-java:S1128"1Remove this unused import 'java.util.Comparator'.(î¹ó¹8¿…âÅô1J$58e28c0e-e2ee-4f32-a4c6-e0891e101fe3
-€
-java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8ÙÙãÅô1J$7eef810d-bf8e-44ae-aae4-33faf7545aba
+b
+java:S1192t"FDefine a constant instead of duplicating this literal "Shion" 5 times.(ÒØ£]8š—Ñ•ö1
+k
+java:S1192p"NDefine a constant instead of duplicating this literal "Contabilidade" 6 times.(ÈìÚÃ8 —Ñ•ö1
+X	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8†˜Ñ•ö1
+X	java:S125"<This block of commented-out lines of code should be removed.(Œ¼Ë¡8˜Ñ•ö1
+X	java:S125#"<This block of commented-out lines of code should be removed.(›å¨Â8’˜Ñ•ö1
+X	java:S125,"<This block of commented-out lines of code should be removed.(úÿÊä8”˜Ñ•ö1
+X	java:S125/"<This block of commented-out lines of code should be removed.(ö”¯ş8š˜Ñ•ö1
+X	java:S125;"<This block of commented-out lines of code should be removed.(‘Üã«8˜Ñ•ö1
+X	java:S125B"<This block of commented-out lines of code should be removed.(›å¨Â8Ÿ˜Ñ•ö1
+]	java:S125H"<This block of commented-out lines of code should be removed.(´Îèîùÿÿÿÿ8 ˜Ñ•ö1
+X	java:S125K"<This block of commented-out lines of code should be removed.(†ıÌª8 ˜Ñ•ö1
+X	java:S125Q"<This block of commented-out lines of code should be removed.(‘Üã«8¢˜Ñ•ö1
+X	java:S125X"<This block of commented-out lines of code should be removed.(¢½óÉ8¨˜Ñ•ö1
+O
+java:S1135&"2Complete the task associated to this TODO comment.(¶ïà½8­˜Ñ•ö1
+L	java:S106]"+Replace this use of System.out by a logger.(à­²˜øÿÿÿÿ8²˜Ñ•ö1
+L
+java:S1197}"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8ä˜Ñ•ö1
+N
+java:S1128"1Remove this unused import 'java.util.Comparator'.(î¹ó¹8ë˜Ñ•ö1
+Z
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8î˜Ñ•ö1
