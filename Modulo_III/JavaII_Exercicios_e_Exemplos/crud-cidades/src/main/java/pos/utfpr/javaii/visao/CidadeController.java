@@ -77,10 +77,19 @@ public class CidadeController {
     }
 
     @PostMapping("/alterar")
-    public String alterar(@RequestParam String nomeAtual, @RequestParam String estadoAtual, Cidade cidade, BindingResult validacao, Model memoria) {
-        cidades.removeIf(cidadeAtual -> cidadeAtual.getNome().equals(nomeAtual) && cidadeAtual.getEstado().equals(estadoAtual));
+    public String alterar(
+        @RequestParam String nomeAtual,
+        @RequestParam String estadoAtual,
+        Cidade cidade) {
 
-        criar(cidade, validacao, memoria);
+        var cidadeAtual = repository.findByNomeAndEstado(nomeAtual, estadoAtual);
+
+        if (cidadeAtual.isPresent()) {
+            var cidadeEncontrada = cidadeAtual.get();
+            cidadeEncontrada.setNome(cidade.getNome());
+            cidadeEncontrada.setEstado(cidade.getEstado());
+            repository.saveAndFlush(cidadeEncontrada);
+        }
 
         return "redirect:/";
     }
