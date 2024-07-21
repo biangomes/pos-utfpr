@@ -36,7 +36,7 @@ public class CidadeController {
     }
 
     @PostMapping("/criar")
-    public String criar(@RequestBody Cidade cidade, BindingResult validacao) {
+    public String criar(@RequestBody Cidade cidade, BindingResult validacao, Model memoria) {
 
         if (validacao.hasErrors()) {
             validacao.getFieldErrors()
@@ -45,6 +45,7 @@ public class CidadeController {
                                   error.getField(),
                                   error.getDefaultMessage())
                 ));
+            memoria.addAttribute("listaCidades", cidades);
         } else {
             // cidades.add(cidade)
             var novaCidade = new CidadeEntidade();
