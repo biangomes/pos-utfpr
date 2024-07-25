@@ -1,5 +1,6 @@
 package pos.utfpr.javaii.visao;
 
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -36,7 +37,7 @@ public class CidadeController {
     }
 
     @PostMapping("/criar")
-    public String criar(@RequestBody Cidade cidade, BindingResult validacao, Model memoria) {
+    public String criar(@RequestBody @Valid Cidade cidade, BindingResult validacao, Model memoria) {
 
         if (validacao.hasErrors()) {
             validacao.getFieldErrors()
