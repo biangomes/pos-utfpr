@@ -1,0 +1,3 @@
+[submodule "pos-utfpr"]
+	path = pos-utfpr
+	url = https://github.com/biangomes/pos-utfpr.git
