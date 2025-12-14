@@ -31,7 +31,7 @@
 				<tr>
 					<th>Nome</th>
 					<th>Estado</th>
-					<th>Ações</th>
+					<th>Acoes</th>
 				</tr>
 			</thead>
 			<tbody>

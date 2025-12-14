@@ -14,49 +14,62 @@
             <p>CRUD PARA CRIAR, ALTERAR, EXCLUIR E LISTAR CIDADES</p>
         </div>
 
-        <#if cidadeAtual??>
-            <form action="/alterar" method="POST" class="needs-validation" novalidate>
-            <input type="hidden" name="nomeAtual" value="${(cidadeAtual.nome)!}"/>
-            <input type="hidden" name="estadoAtual" value="${(cidadeAtual.estado)!}"/>
-        <#else>
-            <form action="/criar" method="POST" class="needs-validation" novalidate>
-        </#if>
+<#--        <#if cidadeAtual??>-->
+<#--            <form action="/alterar" method="POST" class="needs-validation" novalidate>-->
+<#--            <input type="hidden" name="nomeAtual" value="${(cidadeAtual.nome)!}"/>-->
+<#--            <input type="hidden" name="estadoAtual" value="${(cidadeAtual.estado)!}"/>-->
+<#--        <#else>-->
+<#--            <form action="/criar" method="POST" class="needs-validation" novalidate>-->
+<#--        </#if>-->
         
-            <div class="form-group">
-                <label for="nome">Cidade</label>
-                <input required value="${(cidadeAtual.nome)!}" type="text" class="form-control" 
-                name="nome" placeholder="Informe o nome da cidade"
-                id="nome">
+<#--            <div class="form-group">-->
+<#--                <label for="nome">Cidade</label>-->
+<#--                <input required value="${(cidadeAtual.nome)!}" type="text" class="form-control" -->
+<#--                name="nome" placeholder="Informe o nome da cidade"-->
+<#--                id="nome">-->
 
-                <div class="invalid-feedback">
-                    ${nome!}
-                </div>
+<#--                <div class="invalid-feedback">-->
+<#--                    ${nome!}-->
+<#--                </div>-->
+<#--            </div>-->
+
+<#--            <div class="form-group">-->
+<#--                <label for="estado">Estado:</label>-->
+<#--                <input maxlength="2" required value="${(cidadeAtual.estado)!}" type="text" class="form-control" -->
+<#--                name="estado" placeholder="Informe o estado ao qual a cidade pertence" -->
+<#--                id="estado">-->
+
+<#--                <div class="invalid-feedback">-->
+<#--                    ${estado!}-->
+<#--                </div>-->
+<#--            </div>-->
+
+<#--            <#if cidadeAtual??>-->
+<#--                <button type="submit" class="btn btn-warning">CONCLUIR ALTERACAO</button>-->
+<#--            <#else>-->
+<#--                <button type="submit" class="btn btn-primary">CRIAR</button>-->
+<#--            </#if>-->
+
+<#--        </form>-->
+
+        <form action="/criar" method="POST">
+            <div class="form-group">
+                <label for="nome">Cidade:</label>
+                <input name="nome" type="text" class="form-control" placeholder="Informe o nome da cidade" id="nome">
             </div>
 
             <div class="form-group">
                 <label for="estado">Estado:</label>
-                <input maxlength="2" required value="${(cidadeAtual.estado)!}" type="text" class="form-control" 
-                name="estado" placeholder="Informe o estado ao qual a cidade pertence" 
-                id="estado">
-
-                <div class="invalid-feedback">
-                    ${estado!}
-                </div>
+                <input name="estado" type="text" class="form-control" placeholder="Informe o estado ao qual a cidade pertence" id="estado">
             </div>
-
-            <#if cidadeAtual??>
-                <button type="submit" class="btn btn-warning">CONCLUIR ALTERAÇÃO</button>
-            <#else>
-                <button type="submit" class="btn btn-primary">CRIAR</button>
-            </#if>
-
+            <button type="submit" class="btn btn-warning">CRIAR</button>
         </form>
         <table class="table table-striped table-hover mt-5">
             <thead class="thead-dark">
                 <tr>
                     <th>Nome</th>
                     <th>Estado</th>
-                    <th>Ações</th>
+                    <th>Acoes</th>
                 </tr>
             </thead>
             <tbody>
