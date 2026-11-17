@@ -1,0 +1,20 @@
+.layout-cabecalho {
+    height: 225px;
+    border-bottom: 1px solid #ffcc00;
+}
+
+.layout-cabecalho img {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.layout-disciplinas {
+    padding: 80px 0;
+
+}
+
+.layout-disciplinas::after {
+    content: "";
+    display: block;
+    clear: both;
+}
