@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'frontend-acervo-musical';
-  nome = 'UTFPR';
+  nome = 'Beatriz';
+
+  adicionar(nome: string) {
+    this.nome = nome;
+    console.log(nome);
+  }
 }
