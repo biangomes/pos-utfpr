@@ -6,5 +6,5 @@ import { Component } from "@angular/core";
   styleUrls: ['./ola.component.css']
 })
 export class OlaComponent {
-
+  nome = 'Beatriz';
 } 
