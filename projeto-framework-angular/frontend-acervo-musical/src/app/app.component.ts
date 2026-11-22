@@ -7,14 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   nome = '';
-  nomeInserido = 'Beatriz';
+  numero = 0;
 
-  adicionar(nome: string) {
-    this.nomeInserido = nome;
-    this.nome = '';
+  adicionar() {
+    this.numero++;
+    this.nome = 'Baker' + this.numero;
   }
 
-  alterarNome(event: any) {
-    this.nome = event.target.value;
-  }
 }
