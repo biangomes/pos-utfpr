@@ -6,12 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  ultimoId = 0;
   nome = '';
-  numero = 0;
+  adicionado = false;
+  cantores: any[] = [];
 
   adicionar() {
-    this.numero++;
-    this.nome = 'Baker' + this.numero;
+    this.adicionado = true;
+    this.cantores.push({
+      id: ++this.ultimoId,
+      nome: this.nome
+    });
   }
 
 }
