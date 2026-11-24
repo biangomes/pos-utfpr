@@ -1,4 +1,6 @@
-<div class="card">
+<div class="card" [ngStyle]="getEstilosCard()">
     <img src="https://randomuser.me/api/portraits/men/{{cantor.id}}.jpg" class="card-img-top">
-        <div class="card-block">{{cantor.nome}}</div>
+        <div class="card-block"><span [ngClass]="['badge', 'badge-primary']">
+            {{cantor.nome}}
+        </span></div>
 </div>
