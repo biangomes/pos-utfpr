@@ -6,18 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  ultimoId = 0;
-  nome = '';
-  adicionado = false;
   cantores: Cantor[] = [];
 
-  adicionar() {
-    this.adicionado = true;
-    this.cantores.push({
-      id: ++this.ultimoId,
-      nome: this.nome
-    });
-  }  
+  aoAdicionar(cantor: Cantor) {
+    this.cantores.push(cantor);
+  }
 }
 
 interface Cantor {
