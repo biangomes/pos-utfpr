@@ -9,7 +9,7 @@ export class AppComponent {
   ultimoId = 0;
   nome = '';
   adicionado = false;
-  cantores: any[] = [];
+  cantores: Cantor[] = [];
 
   adicionar() {
     this.adicionado = true;
@@ -17,6 +17,10 @@ export class AppComponent {
       id: ++this.ultimoId,
       nome: this.nome
     });
-  }
+  }  
+}
 
+interface Cantor {
+  id: number;
+  nome: string;
 }

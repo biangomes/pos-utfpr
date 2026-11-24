@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class CantorCardComponent {
 
-  @Input() cantor: any;
+  @Input('obj') cantor: any;
   
 }

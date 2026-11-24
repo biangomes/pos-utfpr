@@ -15,10 +15,11 @@
     </button>
 
     <div class="row" style="margin-top: 20px">
-
-        <div class="col-md-2" *ngFor="let c of cantores">
-            <app-cantor-card [cantor]="c"></app-cantor-card>
+        
+        <div class="col-2" *ngFor="let c of cantores">
+            <app-cantor-card [obj]="c"></app-cantor-card>
         </div>
+
     </div>
 
 </div>
