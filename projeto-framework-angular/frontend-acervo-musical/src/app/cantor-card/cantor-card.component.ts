@@ -14,6 +14,13 @@ import { Component, Input } from '@angular/core';
 export class CantorCardComponent {
 
   @Input() cantor: any;
+
+  // getListaClasses() {
+  //   return ['badge', 'badge-primary']
+  // }
+  isAdmin() {
+    return this.cantor.nome.startsWith('B');
+  }
   
   getEstilosCard() {
     return  {

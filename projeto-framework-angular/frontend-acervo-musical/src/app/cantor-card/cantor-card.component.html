@@ -1,6 +1,6 @@
 <div class="card" [ngStyle]="getEstilosCard()">
     <img src="https://randomuser.me/api/portraits/men/{{cantor.id}}.jpg" class="card-img-top">
-        <div class="card-block"><span [ngClass]="['badge', 'badge-primary']">
+        <div class="card-block"><span [ngClass]="{'badge-danger': isAdmin(), 'badge-primary': !isAdmin()}">
             {{cantor.nome}}
         </span></div>
 </div>
