@@ -1,0 +1,24 @@
+.departamentos-pesquisa {
+  margin: 2rem auto;
+  max-width: 960px;
+  padding: 0 1rem;
+}
+
+.departamentos-pesquisa label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.departamentos-pesquisa input {
+  margin-bottom: 1rem;
+  max-width: 24rem;
+  width: 100%;
+}
+
+.acoes {
+  white-space: nowrap;
+}
+
+.novo-departamento {
+  margin-top: 1rem;
+}

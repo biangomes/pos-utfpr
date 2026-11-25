@@ -6,14 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  cantores: Cantor[] = [];
-
-  aoAdicionar(cantor: Cantor) {
-    this.cantores.push(cantor);
-  }
-}
-
-interface Cantor {
-  id: number;
-  nome: string;
 }

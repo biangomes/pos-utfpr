@@ -1,0 +1,64 @@
+<main class="departamentos-pesquisa">
+  <h1>Departamentos</h1>
+
+  <label for="filtro-departamentos">Pesquisar departamentos</label>
+  <input
+    #filtro
+    id="filtro-departamentos"
+    type="text"
+    pInputText
+    placeholder="Nome do departamento"
+    (input)="tabela.filterGlobal(filtro.value, 'contains')"
+  />
+
+  <p-table
+    #tabela
+    [value]="departamentos"
+    [paginator]="true"
+    [rows]="5"
+    [globalFilterFields]="['nomeDepartamento']"
+    responsiveLayout="scroll"
+  >
+    <ng-template pTemplate="header">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nome do departamento</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-departamento>
+      <tr>
+        <td>{{ departamento.id }}</td>
+        <td>{{ departamento.nomeDepartamento }}</td>
+        <td class="acoes">
+          <button
+            pButton
+            type="button"
+            label="Editar"
+            icon="pi pi-pencil"
+            class="p-button-text p-button-sm"
+            pTooltip="Editar departamento"
+            tooltipPosition="top"
+          ></button>
+          <button
+            pButton
+            type="button"
+            label="Excluir"
+            icon="pi pi-trash"
+            class="p-button-text p-button-danger p-button-sm"
+            pTooltip="Excluir departamento"
+            tooltipPosition="top"
+          ></button>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+  <button
+    pButton
+    type="button"
+    label="Novo Departamento"
+    icon="pi pi-plus"
+    class="novo-departamento"
+  ></button>
+</main>
