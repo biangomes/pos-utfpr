@@ -1,0 +1,26 @@
+<header class="navbar">
+  <button
+    pButton
+    type="button"
+    icon="pi pi-bars"
+    class="p-button-text"
+    aria-label="Abrir ou fechar menu"
+    (click)="alternarMenu()"
+  ></button>
+</header>
+
+<p-sidebar
+  [(visible)]="menuVisivel"
+  position="right"
+  [modal]="true"
+  [showCloseIcon]="true"
+  aria-label="Menu de navegação"
+>
+  <h2 class="usuario">Usuário</h2>
+  <nav aria-label="Navegação principal">
+    <ul class="itens-menu">
+      <li><a href="#departamentos">Departamentos</a></li>
+      <li><a href="#funcionarios">Funcionários</a></li>
+    </ul>
+  </nav>
+</p-sidebar>

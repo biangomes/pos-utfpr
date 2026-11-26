@@ -17,4 +17,31 @@
     <div class="col-12">
       <button pButton type="submit" label="Buscar"></button>
     </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-12">
+      <p-table [value] = "cantores">
+        <ng-template pTemplate="header">
+          <tr>
+            <th class="col-id">Id</th>
+            <th>Nome</th>
+            <th>País</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-cantor>
+          <tr>
+            <td class="col-id">{{cantor.id}}</td>
+            <td>{{cantor.nomeCantor}}</td>
+            <td [ngStyle]="{ color: cantor.pais === 'Brasil' ? '#e2b82e' : '#495057' }">{{ cantor.pais }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <a pButton label="Novo cantor"></a>
+  </div>
 </div>
+

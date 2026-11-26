@@ -8,11 +8,14 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
+import { SidebarModule } from 'primeng/sidebar';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DepartamentosPesquisaComponent
+    DepartamentosPesquisaComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,8 @@ import { TooltipModule } from 'primeng/tooltip';
     ButtonModule,
     InputTextModule,
     TableModule,
-    TooltipModule
+    TooltipModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

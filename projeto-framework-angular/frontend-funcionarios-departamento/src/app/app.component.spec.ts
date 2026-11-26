@@ -4,8 +4,10 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
+import { SidebarModule } from 'primeng/sidebar';
 import { AppComponent } from './app.component';
 import { DepartamentosPesquisaComponent } from './departamentos-pesquisa/departamentos-pesquisa.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -15,11 +17,13 @@ describe('AppComponent', () => {
         ButtonModule,
         InputTextModule,
         TableModule,
-        TooltipModule
+        TooltipModule,
+        SidebarModule
       ],
       declarations: [
         AppComponent,
-        DepartamentosPesquisaComponent
+        DepartamentosPesquisaComponent,
+        NavbarComponent
       ],
     }).compileComponents();
   });

@@ -15,3 +15,9 @@ label {
     margin: 0 auto;
   }
 }
+
+.col-id {
+  width: 120px;
+  text-align: center;
+}
+
